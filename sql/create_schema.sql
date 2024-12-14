@@ -17,3 +17,11 @@ create table user_roles_idm(
     constraint fk_user_id foreign key(user_id) references users_idm(id) on delete cascade,
     constraint fk_role_id foreign key(role_id) references roles_idm(id) on delete cascade
 );
+
+CREATE TABLE roster_idm (
+    id bigserial primary key,
+    name varchar(50) not null,
+    lastname varchar(50) not null,
+    email varchar(50) not null,
+    user_principal_name varchar(50) not null
+);

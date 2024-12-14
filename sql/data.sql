@@ -18,3 +18,7 @@ insert into user_roles_idm (user_id, role_id) VALUES
   (3, 3),  -- 'createuser@jhonnyberdeja.com' -> 'ROLE_CREATE_USER'
   (4, 4),  -- 'controlaudit@jhonnyberdeja.com' -> 'ROLE_CONTROL_AUDIT'
   (5, 5);  -- 'admin@jhonnyberdeja.com' -> 'ROLE_ADMIN'
+
+insert into roster_idm (name, lastname, email, user_principal_name) VALUES
+  ('John', 'Doe', 'john.doe@example.com', 'john.doe@infra.ar'),
+  ('Jane', 'Smith', 'jane.smith@example.com', 'jane.smith@infra.ar');
